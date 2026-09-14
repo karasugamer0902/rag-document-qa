@@ -51,8 +51,8 @@ Answer
 - [x] 建立 27 題 Retrieval Evaluation Dataset
 - [x] Direct / Paraphrase / Boundary Positive 測試
 - [x] Hard / Adversarial / Easy Negative 測試
-- [ ] Distance Threshold Evaluation
-- [ ] Precision / Recall / F1 分析
+- [x] Distance Threshold Evaluation
+- [x] Precision / Recall / F1 分析
 - [ ] Answerability / Relevance Gate
 - [ ] Docker
 
@@ -68,6 +68,14 @@ Answer
 進一步加入 Adversarial Negative Questions 後發現，
 語意相似度高並不代表 Retrieved Context 足以回答問題。
 
-因此目前正透過 Accuracy、Precision、Recall 與 F1 Score
-評估 Distance Threshold，並規劃加入 Answerability / Relevance Gate，
-降低缺乏文件依據時仍產生回答的風險。
+透過 Accuracy、Precision、Recall 與 F1 Score
+評估 Distance Threshold，
+在 27 題 pilot evaluation dataset 上進行 distance threshold sweep，
+0.65–0.69 皆取得最高 F1 = 0.9375；選擇較保守的 0.65 作為初始 threshold。
+在該 threshold 下 Recall = 1.0、Precision ≈ 0.882，
+剩餘 2 個 False Positives 均為 adversarial negative，
+顯示單靠 embedding distance 無法判斷 retrieved context 是否真正具備回答問題所需資訊。
+
+接下來將實作並評估 Answerability / Relevance Gate，
+比較加入 Gate 前後的 False Positive、Precision 與 Recall 變化，
+以降低缺乏文件依據時仍產生回答的風險。
