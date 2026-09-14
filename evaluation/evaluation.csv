@@ -1,0 +1,28 @@
+﻿Question,Label,Category,Top1_distance,Top2_distance,Top3_distance
+什麼是自然語言處理？,1,direct_positive,0.441715389,0.479778945,0.506631076
+RNN 有什麼限制？,1,direct_positive,0.540502667,0.544131339,0.622172952
+Transformer 的優點是什麼？,1,direct_positive,0.520215034,0.546598971,0.548069715
+什麼是生成式 AI？,1,direct_positive,0.393460304,0.459870934,0.460097015
+CNN 適合處理什麼資料？,1,direct_positive,0.523262739,0.544974625,0.64665997
+NLP 前處理有哪些方法？,1,direct_positive,0.442002565,0.517127514,0.566384852
+什麼是 Tokenization？,0,boundary_positive,0.7280159,0.73649168,0.736588478
+Word2Vec 是做什麼的？,1,direct_positive,0.49536553,0.495967627,0.539036691
+PS5 要怎麼更換 SSD？,0,easy_negative,0.924082756,0.952436566,0.956430078
+台灣最高的山是哪一座？,0,easy_negative,0.952182829,0.964151382,0.975287259
+FastAPI 要怎麼建立 POST API？,0,hard_negative,0.863990426,0.886833608,0.903598487
+ChromaDB 的 PersistentClient 怎麼使用？,0,hard_negative,0.874265909,0.924750149,0.932267129
+Dockerfile 的 CMD 指令是做什麼的？,0,hard_negative,0.923211992,0.924764574,0.928135276
+PyTorch 的 DataLoader 要怎麼設定 batch_size？,0,hard_negative,0.855511367,0.863395691,0.881388426
+Gemini API 如何使用 Python 呼叫？,0,hard_negative,0.813168287,0.844522417,0.851101518
+為什麼傳統的循環神經網路不擅長處理很長的文章？,1,paraphrase_positive,0.600443721,0.629965425,0.662807107
+有什麼模型可以同時注意一句話中不同位置的資訊？,1,paraphrase_positive,0.519413352,0.546603084,0.557656348
+電腦要怎麼把人類的文字轉換成可以計算的形式？,1,paraphrase_positive,0.407754838,0.595685184,0.610337257
+AI 要怎麼從圖片中判斷裡面是什麼東西？,1,paraphrase_positive,0.604951382,0.612967074,0.616804361
+讓電腦理解人類語言的技術叫什麼？,1,paraphrase_positive,0.491016328,0.519679904,0.558407545
+為什麼模型讀到很前面的內容後，後面可能就記不住了？,1,boundary_positive,0.63018465,0.634025097,0.646094084
+有沒有辦法不用按照順序一個字一個字處理句子？,1,boundary_positive,0.648327231,0.667420208,0.680100799
+圖片裡有很多東西時，AI 怎麼知道每個東西在哪裡？,1,boundary_positive,0.580698729,0.599601448,0.617541075
+Transformer 在 PyTorch 中要怎麼設定 learning_rate？,0,adversarial_negative,0.720851302,0.729959726,0.734585047
+CNN 模型要怎麼用 CUDA 加速訓練？,0,adversarial_negative,0.634190142,0.642001152,0.710407019
+NLP 模型要怎麼部署到 Kubernetes？,0,adversarial_negative,0.633362591,0.668105125,0.668365002
+生成式 AI 要怎麼透過 FastAPI 建立串流 API？,0,adversarial_negative,0.69695437,0.723237455,0.733701229
